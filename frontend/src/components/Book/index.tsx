@@ -1,20 +1,20 @@
-import React, { useEffect } from "react";
-import Image from "next/image";
+import React, { useEffect } from 'react'
+import Image from 'next/image'
 
 interface IBook {
   book: {
-    id?: string;
-    title: string;
-    isbn: string;
-    pageCount: number;
-    publishedDate: Date;
-    thumbnailUrl: string;
-    shortDescription: string;
-    longDescription: string;
-    status: string;
-    authors: string[];
-    categories: string[];
-  };
+    id?: string
+    title: string
+    isbn: string
+    pageCount: number
+    publishedDate: Date
+    thumbnailUrl: string
+    shortDescription: string
+    longDescription: string
+    status: string
+    authors: string[]
+    categories: string[]
+  }
 }
 
 const Book = ({ book }: IBook) => {
@@ -23,7 +23,7 @@ const Book = ({ book }: IBook) => {
       <h1>{book.title}</h1>
       <p>{book.authors}</p>
     </div>
-  );
-};
+  )
+}
 
-export default Book;
+export default Book

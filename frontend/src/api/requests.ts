@@ -1,3 +1,3 @@
-import api from ".";
+import api from '.'
 
-export const getTodos = () => api.get("/books");
+export const getTodos = () => api.get('/books')
