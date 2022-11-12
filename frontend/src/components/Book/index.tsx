@@ -22,7 +22,6 @@ const Book = ({ book }: IBook) => {
     <div>
       <h1>{book.title}</h1>
       <p>{book.authors}</p>
-      <img src={book.thumbnailUrl} alt="" />
     </div>
   );
 };

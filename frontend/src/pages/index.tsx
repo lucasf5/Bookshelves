@@ -1,7 +1,6 @@
-import Books from "components/Books";
+import Header from 'components/Header'
+import { styled } from 'styles/stitches.config'
 
-export default function Home() {
-  return (
-    <Books />
-  )
+export default function IndexPage() {
+  return <Header />
 }

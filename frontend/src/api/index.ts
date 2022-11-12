@@ -4,12 +4,7 @@ const HOST = process.env.REACT_APP_API_HOST || "localhost";
 const PROTOCOL = process.env.REACT_APP_API_PROTOCOL || "http";
 
 const api = axios.create({
-  baseURL: `${PROTOCOL}://${HOST}`,
-  timeout: 10000,
-  headers: {
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
+  baseURL: `https://librairie-production.up.railway.app`,
 });
 
 export default api;
