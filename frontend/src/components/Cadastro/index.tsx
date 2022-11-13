@@ -1,17 +1,12 @@
-import { TextField } from '@mui/material'
+import React, { useEffect } from 'react'
+import { Button, Container, ContainerInner, Image, Inputs } from './style'
+import TextField from '@mui/material/TextField'
 import { register } from 'api/requests'
-import {
-  Button,
-  Container,
-  ContainerInner,
-  Image,
-  Inputs
-} from 'components/Cadastro/style'
 import Router from 'next/router'
-import React from 'react'
 
-const Login = () => {
+const Cadastro = () => {
   const [dados, setDados] = React.useState({
+    name: '',
     email: '',
     password: ''
   })
@@ -40,6 +35,19 @@ const Login = () => {
         <Inputs onSubmit={handleSubmit}>
           <TextField
             id="outlined-basic"
+            label="Nome"
+            variant="outlined"
+            size="small"
+            color="warning"
+            value={dados.name}
+            name="name"
+            type={'text'}
+            onChange={handleChange}
+            required
+          />
+
+          <TextField
+            id="outlined-basic"
             label="Email"
             variant="outlined"
             size="small"
@@ -64,11 +72,11 @@ const Login = () => {
             type={'password'}
           />
 
-          <Button>Login</Button>
+          <Button>Cadastrar</Button>
         </Inputs>
       </ContainerInner>
     </Container>
   )
 }
 
-export default Login
+export default Cadastro

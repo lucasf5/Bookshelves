@@ -9,12 +9,12 @@ const ButtonToggle = () => {
   const { theme, setTheme } = useTheme()
 
   useEffect(() => {
-    if (theme === 'light') {
-      setColor(color === 'dark' ? 'dark' : 'light')
-      setTheme(color)
-      setIsOn(false)
+    if (theme === 'dark') {
+      setColor('dark')
+    } else {
+      setColor('light')
     }
-  }, [color, setTheme, theme])
+  }, [])
 
   const toggleTheme = () => {
     setColor(color === 'light' ? 'dark' : 'light')

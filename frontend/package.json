@@ -19,6 +19,9 @@
     ]
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.13",
     "@stitches/react": "^1.2.8",
     "@types/axios": "^0.14.0",
     "@types/react-animations": "^1.0.0",

@@ -1,10 +1,15 @@
 import mongoose from "mongoose";
 import "dotenv/config";
 
-const MONGO_DB_URL = "mongodb://localhost:27017/Livraria";
-
-const connectToDatabase = (
-  mongoDatabaseURI = process.env.MONGO_URL || MONGO_DB_URL
-) => mongoose.connect(mongoDatabaseURI);
+const connectToDatabase = async () => {
+  try {
+    if (process.env.MONGO_URL) {
+      mongoose.connect(process.env.MONGO_URL);
+      console.log("Connected to database");
+    }
+  } catch (error) {
+    console.log("Error connecting to database", error);
+  }
+};
 
 export default connectToDatabase;
