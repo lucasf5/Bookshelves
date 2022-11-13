@@ -1,2 +1,2 @@
-# Librairie (under development)
+# Bookshelves (under development)
 Project using monorepo, DDD, OO, mongodb, node, nextjs, typescript.
