@@ -6,5 +6,9 @@ export const Container = styled('header', {
   justifyContent: 'center',
   padding: '1rem',
   backgroundColor: '$background',
-  color: '$white'
+  color: '$white',
+  '@media (max-width: 768px)': {
+    width: '100%',
+    padding: '1rem 0'
+  }
 })

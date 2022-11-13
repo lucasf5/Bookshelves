@@ -7,7 +7,10 @@ export const Container = styled('div', {
   width: '100%',
   height: '50px',
   padding: '0 20px',
-  borderBottom: '1px solid $text'
+  borderBottom: '1px solid $text',
+  '@media (max-width: 768px)': {
+    justifyContent: 'space-evenly'
+  }
 })
 
 export const ContainerInner = styled('div', {
@@ -63,6 +66,9 @@ export const NavBar = styled('nav', {
         borderRadius: '10px',
         cursor: 'pointer',
         alignSelf: 'flex-end',
+        '@media (max-width: 841px)': {
+          marginRight: '10px'
+        },
         '&:hover': {
           backgroundColor: '$text',
           color: '$background'

@@ -1,15 +1,15 @@
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
-import { darkTheme, lightTheme } from 'styles/stitches.config'
+import { darkTheme } from 'styles/stitches.config'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="light"
+      defaultTheme="system"
       value={{
-        light: lightTheme.className,
-        dark: darkTheme.className
+        light: 'light',
+        dark: darkTheme
       }}
     >
       <Component {...pageProps} />

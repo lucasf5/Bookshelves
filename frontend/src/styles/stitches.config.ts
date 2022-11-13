@@ -9,41 +9,41 @@ export const {
   theme,
   createTheme,
   css
-} = createStitches({})
+} = createStitches({
+  theme: {
+    colors: {
+      title: '#E1E1E6',
+      text: '#fff',
+      background: '#000',
 
-export const lightTheme = createTheme({
-  colors: {
-    title: '#E1E1E6',
-    text: '#fff',
-    background: '#000',
+      gray1: '#121214',
+      gray2: '#202024 ',
+      gray3: '#F5F5F5',
 
-    gray1: '#121214',
-    gray2: '#202024 ',
-    gray3: '#D4D4D4',
+      white: '#FFF',
+      white100: '#F5F5F5',
+      white200: '#E5E5E5',
+      white300: '#D4D4D4',
+      black: '#000',
 
-    white: '#FFF',
-    white100: '#F5F5F5',
-    white200: '#E5E5E5',
-    white300: '#D4D4D4',
-    black: '#000',
+      purple100: '#7465d4',
+      purple200: '#5e4fa2',
+      purple300: '#4a3c78',
+      purple400: '#3a2d5a',
+      purple500: '#2a1e3c',
 
-    purple100: '#7465d4',
-    purple200: '#5e4fa2',
-    purple300: '#4a3c78',
-    purple400: '#3a2d5a',
-    purple500: '#2a1e3c',
-
-    green100: '#00B37E',
-    green200: '#1ea483',
-    green300: '#2f9a8a',
-    green400: '#3f908f',
-    green500: '#4f8694',
-    green600: '#00875F'
+      green100: '#00B37E',
+      green200: '#1ea483',
+      green300: '#2f9a8a',
+      green400: '#3f908f',
+      green500: '#4f8694',
+      green600: '#00875F'
+    }
   }
 })
 
 // define the dark theme using the de-constructed function
-export const darkTheme = createTheme({
+export const darkTheme = createTheme('dark', {
   colors: {
     title: '#E1E1E6',
     text: '#000',

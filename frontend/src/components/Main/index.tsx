@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Container, Content, Description, Logo, Title } from './styles'
 import Footer from 'components/Footer'
+import Image from 'next/image'
 
 const Main = () => {
-  const { theme } = useTheme()
+  const { theme, setTheme } = useTheme()
+  useEffect(() => {
+    if (theme === 'light') {
+      setTheme('light')
+    }
+  }, [setTheme, theme])
   return (
     <Container>
       <Content>
-        <Logo src="/img/book.svg" />
+        <Image src="/img/book.svg" width={100} height={100} />
         {theme === 'dark' ? (
-          <Logo src="/img/logonamewhite.svg" />
+          <Image src="/img/logonamewhite.svg" width={100} height={100} />
         ) : (
-          <Logo src="/img/logoname.svg" />
+          <Image src="/img/logoname.svg" width={100} height={100} />
         )}
         <Title>is a better way to build products</Title>
         <Description>
@@ -20,7 +26,6 @@ const Main = () => {
           issues, sprints, and product roadmaps.
         </Description>
       </Content>
-      <Footer />
     </Container>
   )
 }

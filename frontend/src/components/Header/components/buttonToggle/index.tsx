@@ -7,11 +7,15 @@ const ButtonToggle = () => {
   const [color, setColor] = useState('light')
   const [isOn, setIsOn] = useState(false)
   const { theme, setTheme } = useTheme()
+
   useEffect(() => {
-    if (theme === 'system') {
-      document.documentElement.classList.add('light')
+    if (theme === 'light') {
+      setColor(color === 'dark' ? 'dark' : 'light')
+      setTheme(color)
+      setIsOn(false)
     }
-  }, [])
+  }, [color, setTheme, theme])
+
   const toggleTheme = () => {
     setColor(color === 'light' ? 'dark' : 'light')
     setIsOn(!isOn)
