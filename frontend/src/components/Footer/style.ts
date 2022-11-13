@@ -5,7 +5,7 @@ export const Container = styled('footer', {
   height: '34vh',
   overflow: 'hidden',
   display: 'flex',
-  backgroundImage: 'url(/img/waveswhite.svg)',
+  backgroundImage: 'url(/img/waves.svg)',
   backgroundRepeat: 'repeat-x',
   backgroundPosition: 'top',
   backgroundSize: 'cover',
