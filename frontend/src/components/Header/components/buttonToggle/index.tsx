@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { ButtonToggleStyle } from './style'
@@ -6,7 +6,12 @@ import { ButtonToggleStyle } from './style'
 const ButtonToggle = () => {
   const [color, setColor] = useState('light')
   const [isOn, setIsOn] = useState(false)
-  const { setTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
+  useEffect(() => {
+    if (theme === 'system') {
+      document.documentElement.classList.add('light')
+    }
+  }, [])
   const toggleTheme = () => {
     setColor(color === 'light' ? 'dark' : 'light')
     setIsOn(!isOn)

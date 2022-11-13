@@ -9,61 +9,36 @@ export const {
   theme,
   createTheme,
   css
-} = createStitches({
-  theme: {
-    colors: {
-      title: '#E1E1E6',
-      text: '#fff',
-      background: '#000',
+} = createStitches({})
 
-      gray1: '#121214',
-      gray2: '#202024 ',
-      gray3: '#C4C4CC',
+export const lightTheme = createTheme({
+  colors: {
+    title: '#E1E1E6',
+    text: '#fff',
+    background: '#000',
 
-      white: '#FFF',
-      white100: '#F5F5F5',
-      white200: '#E5E5E5',
-      white300: '#D4D4D4',
-      black: '#000',
+    gray1: '#121214',
+    gray2: '#202024 ',
+    gray3: '#D4D4D4',
 
-      purple100: '#7465d4',
-      purple200: '#5e4fa2',
-      purple300: '#4a3c78',
-      purple400: '#3a2d5a',
-      purple500: '#2a1e3c',
+    white: '#FFF',
+    white100: '#F5F5F5',
+    white200: '#E5E5E5',
+    white300: '#D4D4D4',
+    black: '#000',
 
-      green100: '#00B37E',
-      green200: '#1ea483',
-      green300: '#2f9a8a',
-      green400: '#3f908f',
-      green500: '#4f8694',
-      green600: '#00875F'
-    },
-    space: {
-      1: '5px',
-      2: '10px',
-      3: '15px'
-    },
-    fontSizes: {
-      md: '1.125rem',
-      lg: '1.25rem',
-      xl: '1.5rem',
-      '2xl': '2rem'
-    },
-    fonts: {
-      untitled: 'Untitled Sans, apple-system, sans-serif',
-      mono: 'Söhne Mono, menlo, monospace'
-    },
-    fontWeights: {},
-    lineHeights: {},
-    letterSpacings: {},
-    sizes: {},
-    borderWidths: {},
-    borderStyles: {},
-    radii: {},
-    shadows: {},
-    zIndices: {},
-    transitions: {}
+    purple100: '#7465d4',
+    purple200: '#5e4fa2',
+    purple300: '#4a3c78',
+    purple400: '#3a2d5a',
+    purple500: '#2a1e3c',
+
+    green100: '#00B37E',
+    green200: '#1ea483',
+    green300: '#2f9a8a',
+    green400: '#3f908f',
+    green500: '#4f8694',
+    green600: '#00875F'
   }
 })
 
@@ -106,13 +81,13 @@ const GlobalStyles = globalCss({
     boxSizing: 'border-box'
   },
 
+  'body, input, textarea, select, button': {
+    font: '400 1rem roboto, sans-serif'
+  },
+
   body: {
     background: '$background',
     color: '$text'
-  },
-
-  'body, input, textarea, select, button': {
-    font: '400 1rem roboto, sans-serif'
   },
 
   'h1,h2,h3,h4,h5,h6': {
