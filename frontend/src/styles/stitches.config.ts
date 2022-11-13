@@ -72,11 +72,11 @@ export const darkTheme = createTheme({
   colors: {
     title: '#E1E1E6',
     text: '#000',
-    background: '#fff',
+    background: '#FFC700',
 
     gray1: '#121214',
     gray2: '#202024 ',
-    gray3: '#C4C4CC',
+    gray3: '#202024',
 
     white: '#FFF',
     white100: '#F5F5F5',

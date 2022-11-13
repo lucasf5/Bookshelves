@@ -18,24 +18,24 @@ const Menu = () => {
           <Link href="/">
             <Image
               style={{ cursor: 'pointer' }}
-              src="/img/linear-dark-logo.svg"
+              src="/img/book.svg"
               alt="logo"
               width={20}
               height={20}
             />
           </Link>
-          <Title>Librairie</Title>
+          <Title>Bookshelves</Title>
         </ContainerInner>
         <NavBar>
           <ul>
             <li>
-              <a href="#">Acervo</a>
+              <Link href="#">Acervo</Link>
             </li>
             <li>
-              <a href="#">Registrar</a>
+              <Link href="#">Registrar</Link>
             </li>
             <li>
-              <a href="#">Login</a>
+              <Link href="#">Login</Link>
             </li>
           </ul>
         </NavBar>

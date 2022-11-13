@@ -18,7 +18,7 @@ const ButtonToggle = () => {
         style={{
           width: '15px',
           height: '15px',
-          backgroundColor: '#4a3c78',
+          backgroundColor: '#FFC700',
           borderRadius: '40px'
         }}
         layout

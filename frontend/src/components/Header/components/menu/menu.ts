@@ -55,6 +55,18 @@ export const NavBar = styled('nav', {
       '&:hover': {
         color: '$gray3',
         transition: 'all 0.3s ease-in-out'
+      },
+
+      '&:last-child': {
+        border: '1px solid $text',
+        padding: '10px 20px',
+        borderRadius: '10px',
+        cursor: 'pointer',
+        alignSelf: 'flex-end',
+        '&:hover': {
+          backgroundColor: '$text',
+          color: '$background'
+        }
       }
     }
   }

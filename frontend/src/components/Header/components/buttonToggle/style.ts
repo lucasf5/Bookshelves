@@ -14,5 +14,9 @@ export const ButtonToggleStyle = styled('button', {
 
   '&[data-ison="true"]': {
     justifyContent: 'flex-end'
+  },
+
+  '@media (max-width: 768px)': {
+    display: 'none'
   }
 })
