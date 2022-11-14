@@ -11,6 +11,7 @@ export const Container = styled('div', {
   backgroundImage: 'url(/img/blobs.svg)',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
+  fontFamily: 'Inter',
   '@media (max-width: 768px)': {
     margin: '0'
   }
@@ -27,7 +28,7 @@ export const ContainerInner = styled('div', {
 })
 
 export const Image = styled('img', {
-  width: 'auto',
+  width: '200px',
   height: 'auto',
   borderBottomLeftRadius: '1rem',
   borderTopLeftRadius: '1rem',
@@ -39,7 +40,6 @@ export const Image = styled('img', {
 export const Inputs = styled('form', {
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
   justifyContent: 'center',
   gap: '1rem',
   maxWidth: '400px',
@@ -52,7 +52,6 @@ export const Inputs = styled('form', {
     borderRadius: '1rem'
   },
   input: {
-    width: '100%',
     boxShadow: 'inset 2px 2px 2px white, inset -2px -2px 2px #cbced1'
     // backgroundColor: '#000'
   }
@@ -65,10 +64,15 @@ export const Button = styled('button', {
   padding: '0.5rem 1rem',
   borderRadius: '0.5rem',
   cursor: 'pointer',
-  width: '100%',
+  margin: '0 auto',
+  width: '95%',
   transition: 'all 0.2s ease-in-out',
+  fontFamily: 'Inter',
+  fontSize: '1.1rem',
   '&:hover': {
     backgroundColor: '#FFC700',
-    color: '$text'
+    color: '$text',
+    transform: 'scale(1.05)',
+    transition: 'all 0.2s ease-in-out'
   }
 })

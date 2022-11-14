@@ -35,7 +35,7 @@ const Menu = () => {
               <Link href="/register">Registrar</Link>
             </li>
             <li>
-              <Link href="#">Login</Link>
+              <Link href="/login">Login</Link>
             </li>
           </ul>
         </NavBar>

@@ -16,6 +16,8 @@ export const {
       text: '#fff',
       background: '#000',
 
+      hover: '#FFC700',
+
       gray1: '#121214',
       gray2: '#202024 ',
       gray3: '#F5F5F5',
@@ -48,6 +50,8 @@ export const darkTheme = createTheme('dark', {
     title: '#E1E1E6',
     text: '#000',
     background: '#FFC700',
+
+    hover: '#FFC700',
 
     gray1: '#121214',
     gray2: '#202024 ',
@@ -87,7 +91,8 @@ const GlobalStyles = globalCss({
 
   body: {
     background: '$background',
-    color: '$text'
+    color: '$text',
+    fontFamily: 'Inter'
   },
 
   'h1,h2,h3,h4,h5,h6': {
